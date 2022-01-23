@@ -1,0 +1,2 @@
+# Used-car-price-prediction
+The prices of new cars are on the rise. As a result, people are more inclined towards buying used cars. However, the sellers as well as the buyers have no idea, what should be the price of those used cars. This is where we come in. Our web app helps to find out the price of used cars based on car information and provide the estimated price of that car at that point of time.
