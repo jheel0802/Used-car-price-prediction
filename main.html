@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +10,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
+    {% load staticfiles %}
+    <base href="/">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="main.css">
+      <link  href="{% static 'main.css' %}">
          </head> 
 <body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -101,3 +104,6 @@
 
 </body>
 </html>
+
+
+
