@@ -8,14 +8,31 @@ def home(request):
 
 def dataprocess(request):
     year = request.GET.get('year', False)
-    # if (year == False) or (year == ""):
-    #     return render(request, 'main.html')
+    transmission = request.GET.get('transmission', False)
+    fuel = request.GET.get('fuel', False)
+    city = request.GET.get('city', False)
+    power = request.GET.get('power', False)
+    engine = request.GET.get('engine', False)
+    milage = request.GET.get('milage', False)
+    seats = request.GET.get('seats', False)
+    owner = request.GET.get('owner', False)
+    tdistance = request.GET.get('tdistance', False)
     print(year)
+    print(tdistance)
     data={
-        "year":year
+        "year":year,
+        "transmission": transmission,
+        "fuel": fuel,
+        "city": city,
+        "power": power,
+        "engine": engine,
+        "milage": milage,
+        "seats": seats,
+        "owner": owner,
+        "tdistance": tdistance,
     }
     return render(request, 'display.html', {'data':data})
-# Enter car details
+
 # Year 
 # Enter the year
 # Kilometers Driven 
