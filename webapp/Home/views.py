@@ -7,16 +7,16 @@ def home(request):
 
 
 def dataprocess(request):
-    year = request.GET.get('year', False)
-    transmission = request.GET.get('transmission', False)
-    fuel = request.GET.get('fuel', False)
-    city = request.GET.get('city', False)
-    power = request.GET.get('power', False)
-    engine = request.GET.get('engine', False)
-    milage = request.GET.get('milage', False)
-    seats = request.GET.get('seats', False)
-    owner = request.GET.get('owner', False)
-    tdistance = request.GET.get('tdistance', False)
+    year = request.POST.get('year', False)
+    transmission = request.POST.get('transmission', False)
+    fuel = request.POST.get('fuel', False)
+    city = request.POST.get('city', False)
+    power = request.POST.get('power', False)
+    engine = request.POST.get('engine', False)
+    milage = request.POST.get('milage', False)
+    seats = request.POST.get('seats', False)
+    owner = request.POST.get('owner', False)
+    tdistance = request.POST.get('tdistance', False)
     print(year)
     print(tdistance)
     data={
