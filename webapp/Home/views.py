@@ -46,7 +46,6 @@ def dataprocess(request):
         dic[f"{transinput}"] = 1
     userval = pd.DataFrame(dic, index=[0])
     y_pred = loaded_model.predict(userval)
-    print(y_pred[0])
     data = {
         "year": year,
         "transmission": transmission,
@@ -58,7 +57,7 @@ def dataprocess(request):
         "seats": seats,
         "owner": owner,
         "tdistance": tdistance,
-        "result": y_pred
+        "result": y_pred[0]
     }
     return render(request, 'display.html', {'data': data})
 
