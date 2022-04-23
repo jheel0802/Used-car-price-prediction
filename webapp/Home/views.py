@@ -30,7 +30,7 @@ def dataprocess(request):
     loaded_model = pickle.load(a)
     cityinput = "Location_"+city
     petrolinput = "Fuel_Type_"+fuel
-    transinput = "Transmisson_"+transmission
+    transinput = "Transmission_"+transmission
     dic = {'Year': 0, 'Kilometers_Driven': 0, 'Owner_Type': 0, 'Seats': 0.0,
            'Mileage(km/kg)': 0.0, 'Engine(CC)': 0.0, 'Power(bhp)': 0.0,
            'Location_Bangalore': 0, 'Location_Chennai': 0, 'Location_Coimbatore': 0,
