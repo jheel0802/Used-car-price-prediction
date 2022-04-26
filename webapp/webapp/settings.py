@@ -118,14 +118,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+<<<<<<< HEAD
 # added manually
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, "static")
+=======
+#added manually 
+STATICFILES_DIR = [os.path.join(BASE_DIR, "static")
+>>>>>>> 4d3826fcf54140d85ad83f4d2e3a2ce1b3f73255
 ]
