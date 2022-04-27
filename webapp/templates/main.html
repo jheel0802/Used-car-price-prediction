@@ -1,54 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<<<<<<< HEAD
-
-<head>
-  <meta charset="UTF-8">
-  {% load static %}
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="stylesheet" href="./main.css">
-</head>
-
-<body>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <div id="main">
-    <div class="container">
-      <div class="title">Enter car details</div>
-      <div class="content">
-        <form action="{% url 'dataprocess' %}" method="POST" id="profile_form">
-          {% csrf_token %}
-          <div class="user-details">
-            <div class="input-box">
-              <span class="details">Year</span>
-              <input type="text" id="year" placeholder="Enter the year" name="year" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Kilometers Driven</span>
-              <input type="text" id="km" placeholder="Enter the kilometers driven" name="tdistance" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Owner type</span>
-              <input type="text" id="owner" placeholder="Enter the owner type" name="owner" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Seats</span>
-              <input type="text" id="age" placeholder="Enter the no. of seats" name="seats" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Mileage(km/kg)</span>
-              <input type="text" id="age" placeholder="Enter the mileage" name="milage" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Engine(CC)</span>
-              <input type="text" id="age" placeholder="Enter the engine" name="engine" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Power(bhp)</span>
-              <input type="text" id="age" placeholder="Enter the power" name="power" required>
-            </div>
-=======
   <head>
     <meta charset="UTF-8">
     {% load  static %}
@@ -344,6 +295,9 @@
             <span class="details">Year</span>
             <input type="text" id="year" placeholder="Enter the year" name="year" required>
           </div>
+          <div>
+            {{data.yearErr}}
+          </div>
           <div class="input-box">
             <span class="details">Kilometers Driven</span>
             <input type="text" id="km" placeholder="Enter the kilometers driven" name="tdistance"  required>
@@ -369,7 +323,6 @@
           <div class="input-box">
             <span class="details">Engine(CC)</span>
             <input type="text" id="age" placeholder="Enter the engine" name="engine" required>
->>>>>>> 4d3826fcf54140d85ad83f4d2e3a2ce1b3f73255
           </div>
 
           <div class="user-details">
@@ -418,13 +371,6 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<<<<<<< HEAD
-</body>
-
-</html>
-=======
-
->>>>>>> e7c77303b724601ba20f70142e4f62a3b54c9d5b
 
 </body>
 
