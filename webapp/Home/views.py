@@ -16,7 +16,7 @@ def home(request):
 
 def dataprocess(request):
     name= request.POST.get('company', False)
-    year = int(request.POST.get('year', False))
+    year = 2022-(int(request.POST.get('year', False)))
     transmission = request.POST.get('transmission', False)
     fuel = request.POST.get('fuel', False)
     city = request.POST.get('city', False)
