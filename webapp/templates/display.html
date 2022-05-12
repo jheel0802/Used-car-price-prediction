@@ -1,17 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Display</title>
   <style>
-    body{
+    body {
       background-color: lightgoldenrodyellow;
     }
-    
-    div p{
+
+    div p {
       color: rgb(98, 67, 64);
       font-family: 'Times New Roman', Times, serif;
       margin-top: 15%;
@@ -19,48 +19,52 @@
       font-size: 25px;
     }
 
-    a input[type="submit"]{
+    a input[type="submit"] {
       margin-top: 5%;
       margin-left: 48%;
       border: 1px solid #423228;
-    background-color: transparent;
-    color: #60473f;
-    padding: 20px 60px;
-    font-size: 18px;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 15px;
-    margin-bottom: 30px;
-    border-radius: 3px;
-    text-transform: capitalize;
-}
+      background-color: transparent;
+      color: #60473f;
+      padding: 20px 60px;
+      font-size: 18px;
+      font-weight: 500;
+      background: transparent;
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 30px;
+      border-radius: 3px;
+      text-transform: capitalize;
+    }
 
-input:focus {
-    outline: none;
-}
+    input:focus {
+      outline: none;
+    }
 
-/* slide hover left -1 css */
+    /* slide hover left -1 css */
 
-input.slide-hover-left-1 {
-    background-color: linear-gradient(0, #472f27, #472f27);
-    background-size: 0;
-    transition: .8s;
-    background-repeat: no-repeat;
-}
+    input.slide-hover-left-1 {
+      background-color: linear-gradient(0, #472f27, #472f27);
+      background-size: 0;
+      transition: .8s;
+      background-repeat: no-repeat;
+    }
 
-input.slide-hover-left-1:hover {
-    background-size: 100%;
-    color: rgb(97, 74, 74);
-}
+    input.slide-hover-left-1:hover {
+      background-size: 100%;
+      color: rgb(97, 74, 74);
+    }
   </style>
 </head>
+
 <body>
 
-     <div><p><b>The selling price of your car should be approximately {{data.result}} lakhs with an accuracy of 91%</b></p></div>
-     <a href="/">
-      <input class="slide-hover-left-1" type="submit" value="Go Back" />
-    </a>
+  <div>
+    <p><b>The selling price of your car should be approximately {{data.result}} lakhs</b></p>
+  </div>
+  <a href="/">
+    <input class="slide-hover-left-1" type="submit" value="Go Back" />
+  </a>
 </body>
+
 </html>

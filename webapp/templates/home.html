@@ -1,81 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
- <style>
-   body{
-    background-image: url('/static/car.jpg');
-    background-repeat: no-repeat;
-    background-size: 1540px 754px; 
-  }
-.container
-{
-    text-align:center;
-    background-color:#15242b;
-    opacity:80%;
-    width:800px;
-    height:350px;
-    margin: auto;
-    margin-top: 30px;
-    padding-top:3px;
-    font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-   
-}
-body{
-    font-family: 'Questrial', sans-serif;
-}
 
-input[type=submit] {
-  background-color: hotpink ;
-  color: white;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+<head>
+  <style>
+    body {
+      background-image: url('/static/car.jpg');
+      background-repeat: no-repeat;
+      background-size: 1540px 754px;
+    }
 
-#submit{
-    position: absolute; 
-    bottom: 60px;
-    margin-left: 45%;
-}
+    .container {
+      text-align: center;
+      background-color: #15242b;
+      opacity: 80%;
+      width: 800px;
+      height: 350px;
+      margin: auto;
+      margin-top: 30px;
+      padding-top: 3px;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      position: relative;
 
-span
-{
-    margin-top: 30px;
-    color:#da7f92;
-    text-align: center;
-     text-shadow: 2px 2px 4px #e4adb9;
-     font-family: 'Questrial', sans-serif;
-     font-size: 45px;
-     text-transform: uppercase;
-     letter-spacing: 5px;
-     word-spacing: 8px;
-}
- </style>
+    }
 
-    </head>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+    body {
+      font-family: 'Questrial', sans-serif;
+    }
+
+    input[type=submit] {
+      background-color: hotpink;
+      color: white;
+      padding: 10px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #submit {
+      position: absolute;
+      bottom: 60px;
+      margin-left: 45%;
+      background-color: #EA4C89;
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 200px 75px 75px 100px;
+      outline: none;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: color 100ms;
+      vertical-align: baseline;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    #submit:hover,
+    #submit:focus {
+      background-color: #F082AC;
+    }
+
+    #submit .a {
+      text-decoration: none;
+    }
+
+    span {
+      margin-top: 30px;
+      color: #da7f92;
+      text-align: center;
+      text-shadow: 2px 2px 4px #e4adb9;
+      font-family: 'Questrial', sans-serif;
+      font-size: 45px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      word-spacing: 8px;
+    }
+  </style>
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Questrial&display=swap" rel="stylesheet">
-    <br>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Questrial&display=swap"
+  rel="stylesheet">
 <br>
- <body>
-    <div class="container">
-      <br>
-      <br>
-      <br>
-     <span>USED CAR PRICE PREDICTION</span>
-    <div id="submit">
-    <input type="submit" value="Sell my car ->"></div>
-  <br>
-  <br>
-  <br>
-</div>
+<br>
+
+<body>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <span>USED CAR PRICE PREDICTION</span>
+    <div>
+      <button id="submit"><a style="text-decoration:none;
+        color:#15242b;" href="/main">SELL CAR!!!</a></button>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
 </body>
+
 </html>
-
-
-

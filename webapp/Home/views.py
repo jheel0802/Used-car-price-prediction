@@ -1,5 +1,3 @@
-import math
-import pathlib
 from posixpath import abspath
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -13,6 +11,9 @@ from sklearn.feature_extraction import DictVectorizer
 def home(request):
     return render(request, 'home.html')
 
+
+def main(request):
+    return render(request, 'main.html')
 
 def dataprocess(request):
     name = request.POST.get('company', False)
