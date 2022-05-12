@@ -11,7 +11,7 @@ from sklearn.feature_extraction import DictVectorizer
 
 
 def home(request):
-    return render(request, 'main.html')
+    return render(request, 'home.html')
 
 
 def dataprocess(request):
