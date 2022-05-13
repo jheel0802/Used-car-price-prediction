@@ -72,6 +72,7 @@ def dataprocess(request):
         "seats": seats,
         "owner": owner,
         "tdistance": tdistance,
+        "power":power,
         "result": str(round(y_pred[0], 2))
     }
     return render(request, 'display.html', {'data': data})
